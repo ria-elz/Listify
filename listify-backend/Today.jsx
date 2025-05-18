@@ -1,9 +1,9 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-// SidebarCalendar, SidebarLogo, TopIcons reused for layout consistency
+
 const SidebarCalendar = ({ currentMonth, setCurrentMonth, selectedDate, onDateSelect }) => {
-  // Minimal, non-interactive calendar for look
+  
   const DAY_LABELS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
   return (
     <div
@@ -101,9 +101,9 @@ const TopIcons = () => (
 const Today = ({ tasks = [] }) => {
   const navigate = useNavigate();
 
-  // For demo, sort so yellow (maybe 'routine') is always on top
+ 
   const getTaskBg = (task, idx) =>
-    idx === 0 ? '#FFF8CC' : '#E7F4FF'; // First yellow, others blue (sample logic)
+    idx === 0 ? '#FFF8CC' : '#E7F4FF'; 
   const getTaskBorder = (task, idx) =>
     `1.5px solid ${idx === 0 ? '#F2E291' : '#BFE2FF'}`;
 
