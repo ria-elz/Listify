@@ -19,7 +19,7 @@ const Login = () => {
       const { data } = await loginUser(formData);
       localStorage.setItem('token', data.token);
       toast.success('Logged in successfully!');
-      navigate('/dashboard'); // <-- changed here
+      navigate('/dashboard'); 
     } catch (err) {
       toast.error(err.response?.data?.msg || 'Login failed');
     } finally {
@@ -205,7 +205,7 @@ const Login = () => {
               required
             />
             <div className="h-8"></div>
-            {/* Login Button with exact width matching */}
+           
             <div className="flex justify-center">
               <button
                 type="submit"
