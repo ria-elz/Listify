@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
 const authMiddleware = require('../middleware/auth');
-const Task = require('../models/Task');  // Add this import
+const Task = require('../models/Task');  
 
-// GET all tasks for the logged-in user
+
 router.get('/', authMiddleware, async (req, res) => {
   try {
     const tasks = await Task.find({ user: req.user.id });
@@ -30,7 +30,7 @@ router.post('/', authMiddleware, async (req, res) => {
       description,
       dueDate,
       status,
-      user: req.user.id  // Comes from auth middleware
+      user: req.user.id  
     });
 
     await newTask.save();
