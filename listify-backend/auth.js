@@ -12,7 +12,7 @@ API.interceptors.request.use((config) => {
   return config;
 });
 
-// Add response interceptor here (new code)
+
 API.interceptors.response.use(
   (response) => response,
   (error) => {
