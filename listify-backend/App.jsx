@@ -9,8 +9,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
-  const [tasks, setTasks] = useState([]); // Shared state for tasks
-
+  const [tasks, setTasks] = useState([]); 
   return (
     <Router>
       <ToastContainer />
