@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { format, startOfMonth, endOfMonth, startOfWeek, endOfWeek, addDays, isSameMonth } from 'date-fns';
 import { useNavigate } from 'react-router-dom';
 
-// Calendar component styled like the image
+
 function SidebarCalendar({ currentMonth, setCurrentMonth, selectedDate, onDateSelect }) {
   const DAY_LABELS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
 
@@ -212,7 +212,6 @@ const Dashboard = ({ tasks = [], setTasks = () => {} }) => {
     navigate('/today');
   };
 
-  // Renders "Daily Routine", "Add More +", "Study Routine" as oval chips, smaller font if needed
   const renderTagChips = () => {
     const { tags } = formData;
     const otherTags = tags.filter(tag => tag !== 'Daily Routine' && tag !== 'Study Routine');
@@ -614,7 +613,7 @@ const Dashboard = ({ tasks = [], setTasks = () => {} }) => {
                   fontSize: '15px'
                 }}>Set a tag for your task</span>
               </div>
-              {/* Tag Chips and Add More + in the same line, as in image */}
+              {/* Tag Chips */}
               <div className="mt-2 mb-3" style={{ minHeight: 32 }}>
                 {renderTagChips()}
               </div>
@@ -646,7 +645,7 @@ const Dashboard = ({ tasks = [], setTasks = () => {} }) => {
               }}
               className="hover:shadow-lg"
             >
-              {/* Only single outer round shape, no inner round */}
+             
               <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
                 <circle fill="white" stroke="#e3e3e3" strokeWidth="2"/>
                 <polyline 
