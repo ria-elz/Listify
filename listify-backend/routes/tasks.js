@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const authMiddleware = require('../middleware/auth');
+const authMiddleware = require('../middleware/authm');
 const Task = require('../models/Task');  
 
 
@@ -42,5 +42,5 @@ router.post('/', authMiddleware, async (req, res) => {
   }
 });
 
-// Add other routes as needed
+
 module.exports = router;

@@ -619,7 +619,7 @@ const Dashboard = ({ tasks = [], setTasks = () => {} }) => {
               </div>
             </div>
           </div>
-            {/* Submit Button at the bottom right of the page */}
+            {/* Submit Button */}
           <div style={{
             display: 'flex',
             justifyContent: 'flex-end',

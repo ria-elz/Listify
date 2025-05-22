@@ -211,7 +211,7 @@ const Today = ({ tasks = [] }) => {
             </div>
           ))}
         </div>
-        {/* Floating action button bottom right */}
+        {/* Floating action button  */}
         <button
           style={{
             position: "fixed",

@@ -34,7 +34,7 @@ const connectDB = async () => {
 connectDB();
 
 // Route registration
-app.use('/api/auth', require('./routes/auth'));
+app.use('/api/auth', require('./routes/authr'));
 app.use('/api/tasks', require('./routes/tasks'));
 
 // Error handling middleware
